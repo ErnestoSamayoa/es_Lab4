@@ -45,4 +45,5 @@ print("\nProceso de atención:")
 simular_atencion(fila)
 
 print("\nMUCHAS GRACIAS POR ESPERAR")
-print("\n************************************************")
+
+print("\n************************************************")   
