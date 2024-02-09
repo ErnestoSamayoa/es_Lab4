@@ -1,3 +1,5 @@
+#5. Revertir la Mitad de una Cola:
+
 class Queue:
     def __init__(self):
         self.items = []
