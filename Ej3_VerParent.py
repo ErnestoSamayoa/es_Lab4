@@ -13,7 +13,10 @@ def parentesis_balancedos(cadena):
 cadena = "(3, 4, 55, 4, 3, 3)"
 resultado, cadena = parentesis_balancedos(cadena)
 
+print("\n****************BIENVENIDO USUARIO************\n")
 if resultado:
     print("Los paréntesis en la cadena", cadena, "están balanceados.")
 else:
     print("Los paréntesis en la cadena", cadena, "no están balanceados.") 
+
+print("\n************************************************")   
