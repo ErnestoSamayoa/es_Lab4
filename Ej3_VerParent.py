@@ -18,5 +18,4 @@ if resultado:
     print("Los paréntesis en la cadena", cadena, "están balanceados.")
 else:
     print("Los paréntesis en la cadena", cadena, "no están balanceados.") 
-
 print("\n************************************************")   
