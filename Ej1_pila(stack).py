@@ -18,7 +18,7 @@ class Pila:
             return self.items[-1]
         else:
             raise IndexError("La pila está vacía")
-
+              
     def esta_vacia(self):
         return len(self.items) == 0
 
@@ -40,4 +40,4 @@ lista_revertida = revertir_lista(lista_original)
 print("\n****************BIENVENIDO USUARIO************\n")
 print("Lista Original:", lista_original)
 print("Lista Revertida:", lista_revertida)
-print("\n************************************************")
+print("\n***********************************************")

@@ -1,6 +1,7 @@
-#3. Verificación de Paréntesis Balanceados:
-
-def parentesis_balancedos(cadena):
+#Verificar paréntesis balanceados utilizando una pila:
+#Escribir una función en Python que tome una cadena de paréntesis y determine si están balanceados.
+#Utilizar una pila para rastrear la apertura y cierre de paréntesis.
+def paréntesis_balanceados(cadena):
     pila = []
     for caracter in cadena:
         if caracter == '(':
@@ -8,14 +9,10 @@ def parentesis_balancedos(cadena):
         elif caracter == ')':
             if not pila or pila.pop() != '(':
                 return False
-    return not pila, cadena
+    return not pila
 
-cadena = "(3, 4, 55, 4, 3, 3)"
-resultado, cadena = parentesis_balancedos(cadena)
-
-print("\n****************BIENVENIDO USUARIO************\n")
-if resultado:
-    print("Los paréntesis en la cadena", cadena, "están balanceados.")
-else:
-    print("Los paréntesis en la cadena", cadena, "no están balanceados.") 
-print("\n************************************************")   
+# Ejemplo de uso:
+cadena = "((()))"
+print(paréntesis_balanceados(cadena))  # Output: True
+cadena = "(()))"
+print(paréntesis_balanceados(cadena))  # Output: False
